@@ -39,3 +39,4 @@ def calculateGPA():
 
     uwgpa = round((uwgp/credits),3)
     wgpa = round((wgp/credits),3)
+    return uwgpa, wgpa, credits
