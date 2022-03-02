@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <title>GPA Calc</title>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
-
 <body>
 
-    <center>GPA Calculator</center>
+	<h2>SHS GPA Calculator</h2>
+	<p>Lorem ipsum dolor sit ametiusmod</p>
 
-</body>
 
-<head>
+<form>
+<table id = "gpaform">
+  <tbody>
 
-    <title>Web Development User #08</title>
 
-</head>
+  <tr id = "head">
+    <th>Grade</th>
+    <th># of Credits</th>
+    <th>Weighted?</th>
+    <th>Course Name (Optional)</th>
+  </tr>
+  <tr id = "formrow">
+<td><select id="g0" name="Grade">
+  <option value="A">A</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B">B</option>
+  <option value="B-">B-</option>
+  <option value="C+">C+</option>
+  <option value="C">C</option>
+  <option value="C-">C-</option>
+  <option value="D+">D+</option>
+  <option value="D">D</option>
+  <option value="D-">D-</option>
+  <option value="F">F</option>
+</select></td>
+<td><input type="number" step="0.5" id="c0" /></td>
+<td><input type="checkbox" id="w0" /></td>
+<td><input type="text" id = "n0"	 /></td>
+  </tr>
+  </tbody>
+</table>
 
-<body>
-
-    <center>My name is User #08</center>
+</form>
+<button type="button" name="button" onclick="addRow()">ADD ROW</button>
+<script src="js/scripts.js"></script>
 
 </body>
 

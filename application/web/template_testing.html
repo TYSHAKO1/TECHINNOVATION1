@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body{
-      text-align: center;
-    }
+<link rel="stylesheet" href="css/style.css">
 
-table, th, td {
-
-    border: 1px solid black;
-    width: 800px;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-</style>
 </head>
 <body>
-  <script>
-    var i = 0;
-  </script>
+
 	<h2>SHS GPA Calculator</h2>
 	<p>Lorem ipsum dolor sit ametiusmod</p>
 
@@ -60,26 +45,8 @@ table, th, td {
 
 </form>
 <button type="button" name="button" onclick="addRow()">ADD ROW</button>
-<script>
-function addRow() {
-  i+=1;
-  var row = document.getElementById("formrow"); // find row to copy
-      var table = document.getElementById("gpaform").tBodies[0]; // find table to append to
-      var clone = row.cloneNode(true); // copy children too
-      var newid = "formrow" + i.toString();
-      clone.id = newid// change id or other attributes/contents
-      table.appendChild(clone); // add new row to end of table
-      var cloneChild = document.getElementById(newid).childNodes;
-      for (var j = 0; j < cloneChild.length; j++) {
-        if (cloneChild[j].valueOf().hasChildNodes()) {
-          cloneChild[j].valueOf().childNodes[0].id = cloneChild[j].valueOf().childNodes[0].id[0] + i.toString();
-        }
-      }
+<script src="js/scripts.js"></script>
 
-
-
-}
-</script>
 </body>
 
 </html>
