@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      text-align: center;
+    }
+
+table, th, td {
+
+    border: 1px solid black;
+    width: 800px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+</style>
+</head>
+<body>
+  <script>
+    var i = 0;
+  </script>
+	<h2>SHS GPA Calculator</h2>
+	<p>Lorem ipsum dolor sit ametiusmod</p>
+
+
+<form>
+<table id = "gpaform">
+  <tbody>
+
+
+  <tr id = "head">
+    <th>Grade</th>
+    <th># of Credits</th>
+    <th>Weighted?</th>
+    <th>Course Name (Optional)</th>
+  </tr>
+  <tr id = "formrow">
+<td><select id="g0" name="Grade">
+  <option value="A">A</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B">B</option>
+  <option value="B-">B-</option>
+  <option value="C+">C+</option>
+  <option value="C">C</option>
+  <option value="C-">C-</option>
+  <option value="D+">D+</option>
+  <option value="D">D</option>
+  <option value="D-">D-</option>
+  <option value="F">F</option>
+</select></td>
+<td><input type="number" step="0.5" id="c0" /></td>
+<td><input type="checkbox" id="w0" /></td>
+<td><input type="text" id = "n0"	 /></td>
+  </tr>
+  </tbody>
+</table>
+
+</form>
+<button type="button" name="button" onclick="addRow()">ADD ROW</button>
+<script>
+function addRow() {
+  i+=1;
+  var row = document.getElementById("formrow"); // find row to copy
+      var table = document.getElementById("gpaform").tBodies[0]; // find table to append to
+      var clone = row.cloneNode(true); // copy children too
+      var newid = "formrow" + i.toString();
+      clone.id = newid// change id or other attributes/contents
+      table.appendChild(clone); // add new row to end of table
+      var cloneChild = document.getElementById(newid).childNodes;
+      for (var j = 0; j < cloneChild.length; j++) {
+        if (cloneChild[j].valueOf().hasChildNodes()) {
+          cloneChild[j].valueOf().childNodes[0].id = cloneChild[j].valueOf().childNodes[0].id[0] + i.toString();
+        }
+      }
+
+
+
+}
+</script>
+</body>
+
+</html>
