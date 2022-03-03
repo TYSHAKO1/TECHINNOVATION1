@@ -17,3 +17,32 @@ function addRow() {
 
 
 }
+
+function compileData() {
+  //console.log(document.getElementById("g0").value);
+  var package = [];
+  var q = document.getElementById("gpaform").tBodies[0].rows.length;
+  for (var n = 0; n < q-1; n++) {
+    var row = [];
+    var gid = "g" + n.toString();
+    var cid = "c" + n.toString();
+    var wid = "w" + n.toString();
+    row.push([document.getElementById(gid).value, document.getElementById(cid).value, document.getElementById(wid).checked]);
+    package.push(row);
+  }
+  console.log(package);
+  return package;
+}
+function submit() {
+    var transcriptdata = compileData();
+    $.ajax({
+        type: 'post',
+        url: 'text.php',
+        data: {
+            someValue: transcriptdata
+        },
+        success: function( data ) {
+            console.log( data );
+        }
+    });
+}

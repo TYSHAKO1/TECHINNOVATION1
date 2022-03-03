@@ -10,7 +10,7 @@
 	<p>Lorem ipsum dolor sit ametiusmod</p>
 
 
-<form>
+<form name="transcript">
 <table id = "gpaform">
   <tbody>
 
@@ -45,6 +45,7 @@
 
 </form>
 <button type="button" name="button" onclick="addRow()">ADD ROW</button>
+<button type="submit" form="transcript">SUBMIT</button>
 <script src="js/scripts.js"></script>
 
 </body>
