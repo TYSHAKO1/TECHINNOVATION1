@@ -5,7 +5,7 @@
 
 </head>
 <body>
-
+  
 	<h2>SHS GPA Calculator</h2>
 	<p>Lorem ipsum dolor sit ametiusmod</p>
 

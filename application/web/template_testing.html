@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <div id="grad1">
 <head>
-<link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<h2>SHS GPA Calculator</h2>
-	<p>Lorem ipsum dolor sit ametiusmod</p>
-
+	<h2 class = "font">SHS GPA Calculator</h2>
 
 <!-- <form name="transcript" onsubmit="compileSend()"> -->
 <table id = "gpaform">
@@ -16,13 +13,13 @@
 
 
   <tr id = "head">
-    <th>Grade</th>
-    <th># of Credits</th>
-    <th>Weighted?</th>
-    <th>Course Name (Optional)</th>
+    <th class = "font">Grade</th>
+    <th class = "font"># of Credits</th>
+    <th class = "font">Weighted?</th>
+    <th class = "font">Course Name (Optional)</th>
   </tr>
   <tr id = "formrow">
-<td><select id="g0" name="Grade">
+<td class = "font"><select id="g0" name="Grade">
   <option value="A">A</option>
   <option value="A-">A-</option>
   <option value="B+">B+</option>
@@ -44,10 +41,10 @@
 </table>
 
 <!-- </form> -->
-<button type="button" name="button" onclick="addRow()">ADD ROW</button>
-<button type="submit" form="transcript" onclick="submit()">SUBMIT</button>
+<button class = "font" type="button" name="button" onclick="addRow()">ADD ROW</button>
+<button class = "font" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
 <br><hr><br>
-<table><thead><tr><th></th><th>U/W</th><th>W</th></tr></thead><tbody><tr><td>GPA:</td><td>Unweighted GPA</td><td>Weighted GPA</td></tr></tbody></table><script src="js/scripts.js"></script>
+<table class = "font" ><thead><tr><th></th><th>U/W</th><th>W</th></tr></thead><tbody><tr><td>GPA:</td><td>Unweighted GPA</td><td>Weighted GPA</td></tr></tbody></table><script src="js/scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
 
