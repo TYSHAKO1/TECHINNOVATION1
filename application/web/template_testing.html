@@ -19,7 +19,7 @@
     <th class = "font">Course Name (Optional)</th>
   </tr>
   <tr id = "formrow">
-<td class = "font"><select id="g0" name="Grade">
+<td class = "font"><select id="g0" name="Grade" value="A">
   <option value="A">A</option>
   <option value="A-">A-</option>
   <option value="B+">B+</option>
@@ -33,7 +33,7 @@
   <option value="D-">D-</option>
   <option value="F">F</option>
 </select></td>
-<td><input type="number" step="0.5" id="c0" /></td>
+<td><input type="number" step="0.5" id="c0" min="0.0" value="0.0"/></td>
 <td><input type="checkbox" id="w0" value="True"/></td>
 <td><input type="text" id = "n0"	 /></td>
   </tr>
@@ -44,7 +44,8 @@
 <button class = "font" type="button" name="button" onclick="addRow()">ADD ROW</button>
 <button class = "font" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
 <br><hr><br>
-<table class = "font" ><thead><tr><th></th><th>U/W</th><th>W</th></tr></thead><tbody><tr><td>GPA:</td><td>Unweighted GPA</td><td>Weighted GPA</td></tr></tbody></table><script src="js/scripts.js"></script>
+<table class = "font" ><thead><tr><th></th><th>U/W</th><th>W</th></tr></thead><tbody><tr><td>GPA:</td><td id="uwgpa">Unweighted GPA</td><td id="wgpa">Weighted GPA</td></tr></tbody></table>
+<script src="js/scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
 
