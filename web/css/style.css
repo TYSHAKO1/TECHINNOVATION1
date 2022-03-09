@@ -35,3 +35,8 @@ margin-right: 20%;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, red , black);
 }
+
+#br {
+  display: block;
+  margin: 10px 0;
+}
