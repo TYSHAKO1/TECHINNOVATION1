@@ -25,6 +25,11 @@ margin-right: 20%;
   background-color: #FF5D3F;
   color: #ffffff;
 }
+.button {
+  color: black;
+  font-family: "Fantasy", "Chalkduster", monospace;
+}
+
 #grad1 {
   height: 800px;
   background-color: red; /* For browsers that do not support gradients */

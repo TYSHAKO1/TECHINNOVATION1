@@ -3,15 +3,17 @@
   <div id="grad1">
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel='shortcut icon' type='image/x-icon' src = 'Saber_Head_JPG.ico' />
 </head>
 <body>
 	<h2 class = "font">SHS GPA Calculator</h2>
 
+<marquee class = "font">Calculate Your GPA!</marquee>
 <!-- <form name="transcript" onsubmit="compileSend()"> -->
 <table id = "gpaform">
   <tbody>
 
-
+<!--Start-->
   <tr id = "head">
     <th class = "font">Grade</th>
     <th class = "font"># of Credits</th>
@@ -41,14 +43,19 @@
 </table>
 
 <!-- </form> -->
-<button class = "font" type="button" name="button" onclick="addRow()">ADD ROW</button>
-<button class = "font" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
+<button class = "button" type="button" name="button" onclick="addRow()">ADD ROW</button>
+<button class = "button" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
 <br><hr><br>
 <table class = "font" ><thead><tr><th></th><th>U/W</th><th>W</th></tr></thead><tbody><tr><td>GPA:</td><td id="uwgpa">Unweighted GPA</td><td id="wgpa">Weighted GPA</td></tr></tbody></table>
 <script src="js/scripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
-
 </body>
+
+<footer>
+<img src="SHS.jpeg" style="width:500px;height:500px;">
+
+
+</footer>
 
 </html>
