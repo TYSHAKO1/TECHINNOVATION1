@@ -48,7 +48,13 @@ body {
   background-color: red;
   /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, red, black);
+<<<<<<< Updated upstream
+=======
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , black);
+>>>>>>> Stashed changes
 }
+
 
 #br {
   display: block;
