@@ -1,37 +1,51 @@
-body{
+body {
   text-align: center;
 }
+
 table, th, td {
-border: 1px solid black;
-width: 800px;
-text-align: center;
-margin-left: 23%;
-margin-right: 20%;
+  border: 1px solid black;
+  width: 800px;
+  text-align: center;
+  margin-left: 23%;
+  margin-right: 20%;
 }
+
 .font {
   font-family: "Fantasy", "Chalkduster", monospace;
   color: #ffffff;
 }
+
 .styled-table {
   border-collapse: collapse;
   min-width: 400px;
   box-shadow: 0 0 20px #ffffff;
 }
+
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
+
 .theaddata {
   background-color: #FF5D3F;
   color: #ffffff;
 }
+
 .button {
   color: black;
   font-family: "Fantasy", "Chalkduster", monospace;
 }
 
+body {
+  height: 800px;
+  background-color: red;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, black);
+}
+
 #grad1 {
   height: 800px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, red , black);
+  background-color: red;
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, black);
 }
