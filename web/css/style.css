@@ -96,3 +96,7 @@ clear: both;
 .container:hover .hover {
   opacity: 1;
 }
+
+.margin {
+  margin-left: 200px;
+}
