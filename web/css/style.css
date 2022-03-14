@@ -7,13 +7,26 @@ table, th, td {
   width: 600px;
   text-align: center;
   margin-left: 8%;
+  background-color: gray;
   margin-right: 15%;
+}
+
+th {
+  width: 600px;
+  text-align: center;
+  margin-left: 8%;
+  background-color: red;
+  margin-right: 15%;
+}
+
+tr:hover {
+  background-color: black;
 }
 
 .font {
   font-family: "Fantasy", "Chalkduster", monospace;
   color: #ffffff;
-  text-shadow: 3px 2px  black;
+  text-shadow: 3px 2px black;
 }
 
 .styled-table {
