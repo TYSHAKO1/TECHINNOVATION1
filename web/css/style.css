@@ -116,3 +116,31 @@ body {
 .margin {
   margin-left: 200px;
 }
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 21%,
+    darkred 29%,
+    white 67%,
+    #EACA27 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-family: "Fantasy", "Chalkduster", monospace;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
