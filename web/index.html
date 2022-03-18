@@ -5,61 +5,63 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/application/web/images/Saber_Head_JPG.ico">
     <title>SHS GPA Calculator</title>
   </head>
+
   <body>
-  <div class="bg"></div>
-  <div class="bg bg2"></div>
-  <div class="bg bg3"></div>
-  <div class="content"><h2 class="animate-charcter">SHS GPA Calculator</h2></div>
-  
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+      <h2 class="animate-charcter">SHS GPA Calculator</h2>
+    </div>
 
-  <marquee class="font">Calculate Your GPA!</marquee>
-  <!-- <form name="transcript" onsubmit="compileSend()"> -->
-  <div class="row">
-    <div class="column left">
-      <table id="gpaform">
-        <tbody>
-          <!--Start-->
-          <tr id="head">
-            <th class="font">Grade</th>
-            <th class="font"># of Credits</th>
-            <th class="font">Weighted?</th>
-            <th class="font">Course Name</th>
-          </tr>
-          <tr id="formrow">
-            <td class="font"><select id="g0" name="Grade" value="A">
-                <option value="A">A</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B">B</option>
-                <option value="B-">B-</option>
-                <option value="C+">C+</option>
-                <option value="C">C</option>
-                <option value="C-">C-</option>
-                <option value="D+">D+</option>
-                <option value="D">D</option>
-                <option value="D-">D-</option>
-                <option value="F">F</option>
-                <option value="other">other</option>
-              </select></td>
-            <td><input type="number" step="0.5" id="c0" min="0.0" value="1.0" /></td>
-            <td><input type="checkbox" id="w0" value="True" /></td>
-            <td><input type="text" id="n0" /></td>
-          </tr>
-        </tbody>
-      </table>
 
-      <!-- </form> -->
+    <marquee class="font">Calculate Your GPA!</marquee>
+    <!-- <form name="transcript" onsubmit="compileSend()"> -->
+    <div class="row">
+      <div class="column left">
+        <table id="gpaform">
+          <tbody>
+            <!--Start-->
+            <tr id="head">
+              <th class="font">Grade</th>
+              <th class="font"># of Credits</th>
+              <th class="font">Weighted?</th>
+              <th class="font">Course Name</th>
+            </tr>
+            <tr id="formrow">
+              <td class="font"><select id="g0" name="Grade" value="A">
+                  <option value="A">A</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B">B</option>
+                  <option value="B-">B-</option>
+                  <option value="C+">C+</option>
+                  <option value="C">C</option>
+                  <option value="C-">C-</option>
+                  <option value="D+">D+</option>
+                  <option value="D">D</option>
+                  <option value="D-">D-</option>
+                  <option value="F">F</option>
+                  <option value="other">other</option>
+                </select></td>
+              <td><input type="number" step="0.5" id="c0" min="0.0" value="1.0" /></td>
+              <td><input type="checkbox" id="w0" value="True" /></td>
+              <td><input type="text" id="n0" /></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <button class="button" type="button" name="button" onclick="saveGrades()">SAVE</button>
-      <button class="button" type="button" name="button" onclick="addRow()">ADD ROW</button>
-      <button class="button" type="button" name="button" onclick="deleteLastAddedRow()">DELETE ROW</button>
-      <button class="button" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
-      <input type="file" id="myfile" name="myfile" onchange="upload()">
+        <!-- </form> -->
+
+        <button class="button" type="button" name="button" onclick="saveGrades()">SAVE</button>
+        <button class="button" type="button" name="button" onclick="addRow()">ADD ROW</button>
+        <button class="button" type="button" name="button" onclick="deleteLastAddedRow()">DELETE ROW</button>
+        <button class="button" type="submit" form="transcript" onclick="submit()">SUBMIT</button>
+        <input type="file" id="myfile" name="myfile" onchange="upload()">
 
 
       </div>
@@ -109,7 +111,7 @@
             </div>
 
             <!-- Left and right controls -->
-          
+
           </div>
         </div>
 
@@ -117,6 +119,7 @@
 
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 
 </html>
