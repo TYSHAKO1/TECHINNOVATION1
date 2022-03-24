@@ -4,7 +4,6 @@ SHS GPA CALCULATOR
  * Introduction
  * Requirements
  * Installation
- * TODO
 
 
 
@@ -12,7 +11,7 @@ INTRODUCTION
 ------------
 
 AN SHS SPECIFIC GPA CALCULATOR
-This is our final for Tech Innovations-Pasch 2nd-3rd quarter. This code was written by Ben, Aidan, and Tyler during the final weeks or Q3.
+This is our final for Tech Innovations/Pasch 3rd quarter. This code was written by Ben, Aidan, and Tyler during the final weeks of Q3.
 
 
 REQUIREMENTS
@@ -37,10 +36,3 @@ F     |      2       |     True   | AP World History
 other |      1       |     True   | AP Computer Science Principles
 
 GPA: UW 1.425 | W 1.475
-
-TODO
-------------
--Get calculator to pull variables from JS
--Get CSS up and working with multiple style changes
--Use Weighted and non-weighted classes to calculate grades
--JS file needs to calculate the GPA
